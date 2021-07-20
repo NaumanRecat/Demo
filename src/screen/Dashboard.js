@@ -12,7 +12,7 @@ export class Dashboard extends Component {
                 backgroundColor:'green',
             }}>
                 <Text>
-                    Nomi
+                    Nomi is a good developer
                 </Text>
             </View>
         )
