@@ -7,6 +7,7 @@ import { Text, View, Image, TouchableOpacity } from 'react-native';
 
 import {widthPercentageToDP as w, heightPercentageToDP as h} from 'react-native-responsive-screen';
 import Icon from 'react-native-vector-icons/Ionicons';
+import {NavHeader} from '../component/NavHeader';
 
 export class Dashboard extends Component {
     render(){
@@ -16,47 +17,7 @@ export class Dashboard extends Component {
                 backgroundColor:'grey',
             }}>
 
-
-                <View style={{
-                    height: h('12%'),
-                    width: w('100%'),
-                    backgroundColor:"#ada",
-                    flexDirection:'row',
-                }}>
-                    {/* left */}
-                <View style={{
-                       height: h('12%'),
-                       width: w('25%'),
-                       backgroundColor:"pink",
-                       alignItems:'center',
-                       justifyContent:'center',
-                }}>
-                    <Icon name={'home'} size={30} color={'black'} />
-                </View>
-
-                {/* Mid */}
-                <View style={{
-                       height: h('12%'),
-                       width: w('50%'),
-                       backgroundColor:"purple",
-                       alignItems:'center',
-                       justifyContent:'center',
-                }}>
-                    <Text> Go</Text>
-                </View>
-                {/* Right */}
-                <View style={{
-                       height: h('12%'),
-                       width: w('25%'),
-                       backgroundColor:"red",
-                       alignItems:'center',
-                       justifyContent:'center',
-                }}>
-                    <Text> Go</Text>
-                </View>
-
-                </View>
-              
+              <NavHeader/>
                <TouchableOpacity
             style={{
               height: h('17%'),
